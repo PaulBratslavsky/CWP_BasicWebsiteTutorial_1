@@ -1,0 +1,122 @@
+/*******************************
+        GLOBAL STYLE CSS
+*******************************/
+
+/*******************************
+        General Styling
+*******************************/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height:100%;
+    text-align: center;
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #adadad;
+}
+/*******************************
+        Main Header Nav
+*******************************/
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: #a9b9b9;
+    color: whitesmoke;
+}
+
+.main-header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    
+}
+
+.main-header__nav--items {
+    display: none;
+}
+
+/*******************************
+        Mobile Nav
+*******************************/
+.mobile-menu {
+    display: none;
+}
+/*******************************
+        Main Grid
+*******************************/
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: 100% auto;
+    grid-template-areas:
+        "main-content"
+        "main-footer"
+    ;
+}
+
+.main-content {
+    grid-area: main-content;
+    padding-top: 4rem;
+    height: 100%;
+}
+
+.main-footer {
+    grid-area: main-footer;
+}
+/*******************************
+        Main Content
+*******************************/
+.main-content__hero {
+    min-height: 85vh;
+    width: 100%;
+    background: yellow;
+
+}
+
+.main-content__top-three {
+    min-height: 85vh;
+    width: 100%;
+    background: blue;
+}
+
+.main-content__featured {
+    min-height: 85vh;
+    width: 100%;
+    background: violet;
+}
+
+.main-content__call-to-action {
+    min-height: 46vh;
+    width: 100%;
+    background: pink;
+}
+
+.main-content__sign-up-form {
+    min-height: 46vh;
+    width: 100%;
+    background: #f8d9de;
+}
+
+/*******************************
+        Main Footer
+*******************************/
+.main-footer {
+    height: 3rem;
+    background: black;
+    color: whitesmoke;
+}
